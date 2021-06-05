@@ -2,13 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8578b9d3-1628-46e4-9abd-96edc71fb3dd" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beegoweb" beforeDir="false" afterPath="$PROJECT_DIR$/beegoweb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/beegoweb.sql" beforeDir="false" afterPath="$PROJECT_DIR$/beegoweb.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/app.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/app.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initial/database.go" beforeDir="false" afterPath="$PROJECT_DIR$/initial/database.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/initial/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/initial/init.go" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +69,7 @@
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
-    <proxy>direct</proxy>
+    <proxy>https://goproxy.cn,direct</proxy>
   </component>
   <component name="WindowStateProjectService">
     <state x="0" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1622341287120">
@@ -130,9 +124,9 @@
     <state width="862" height="363" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1622569595541" />
     <state width="862" height="363" key="GridCell.Tab.1.right/0.23.1639.1027@0.0.1680.1050" timestamp="1622574952651" />
     <state width="882" height="363" key="GridCell.Tab.1.right/0.23.1642.1027@0.23.1642.1027" timestamp="1622347941172" />
-    <state x="0" y="164" key="SettingsEditor" timestamp="1622341267565">
+    <state x="0" y="164" key="SettingsEditor" timestamp="1622877049915">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="0" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1622341267565" />
+    <state x="0" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1622877049915" />
   </component>
 </project>
