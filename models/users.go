@@ -75,6 +75,7 @@ func AllUserRole() (*UserRole, error) {
 func FindUserRoleByUserId(Id int) (*UserRole, error) {
 	o := orm.NewOrm()
 	r := &UserRole{}
+	// err := o.QueryTable(r).Filter("Id", Id).One(r)
 	err := o.QueryTable(r).Filter("Id", Id).One(r)
 	if err != nil {
 		fmt.Println("FindUserRoleByUserId>One", err)

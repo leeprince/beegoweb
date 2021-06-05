@@ -14,7 +14,7 @@ func _TestAllUser(t *testing.T) {
 	fmt.Println(string(b))
 }
 
-func TestFindUserRoleByUserId(t *testing.T) {
+func _TestFindUserRoleByUserId(t *testing.T) {
 	userrole, err := FindUserRoleByUserId(2)
 	fmt.Println(userrole, err)
 	
