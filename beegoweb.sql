@@ -11,7 +11,7 @@
  Target Server Version : 80013
  File Encoding         : 65001
 
- Date: 02/06/2021 03:02:42
+ Date: 05/06/2021 13:31:43
 */
 
 SET NAMES utf8mb4;
@@ -32,11 +32,11 @@ CREATE TABLE `post` (
 -- Records of post
 -- ----------------------------
 BEGIN;
-INSERT INTO `post` VALUES (1, 'paper1', 1);
-INSERT INTO `post` VALUES (2, 'paper2', 1);
-INSERT INTO `post` VALUES (3, 'paper3', 2);
-INSERT INTO `post` VALUES (4, 'paper4', 3);
-INSERT INTO `post` VALUES (5, 'paper5', 3);
+INSERT INTO `post` VALUES (1, 'title1', 1);
+INSERT INTO `post` VALUES (2, 'title2', 1);
+INSERT INTO `post` VALUES (3, 'title3', 2);
+INSERT INTO `post` VALUES (4, 'title4', 3);
+INSERT INTO `post` VALUES (5, 'title5', 3);
 COMMIT;
 
 -- ----------------------------
@@ -55,9 +55,9 @@ CREATE TABLE `post_tags` (
 -- ----------------------------
 BEGIN;
 INSERT INTO `post_tags` VALUES (1, 1, 1);
-INSERT INTO `post_tags` VALUES (2, 3, 1);
-INSERT INTO `post_tags` VALUES (3, 2, 2);
-INSERT INTO `post_tags` VALUES (4, 3, 3);
+INSERT INTO `post_tags` VALUES (2, 2, 1);
+INSERT INTO `post_tags` VALUES (3, 3, 1);
+INSERT INTO `post_tags` VALUES (4, 3, 2);
 INSERT INTO `post_tags` VALUES (5, 4, 2);
 INSERT INTO `post_tags` VALUES (6, 4, 3);
 INSERT INTO `post_tags` VALUES (7, 5, 3);
@@ -71,7 +71,16 @@ CREATE TABLE `profile` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `age` varchar(255) DEFAULT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of profile
+-- ----------------------------
+BEGIN;
+INSERT INTO `profile` VALUES (1, '18');
+INSERT INTO `profile` VALUES (2, '19');
+INSERT INTO `profile` VALUES (3, '20');
+COMMIT;
 
 -- ----------------------------
 -- Table structure for tag
@@ -87,9 +96,29 @@ CREATE TABLE `tag` (
 -- Records of tag
 -- ----------------------------
 BEGIN;
-INSERT INTO `tag` VALUES (1, 'offical');
-INSERT INTO `tag` VALUES (2, 'beta');
-INSERT INTO `tag` VALUES (3, 'dev');
+INSERT INTO `tag` VALUES (1, 'tag1');
+INSERT INTO `tag` VALUES (2, 'tag2');
+INSERT INTO `tag` VALUES (3, 'tag3');
+COMMIT;
+
+-- ----------------------------
+-- Table structure for user
+-- ----------------------------
+DROP TABLE IF EXISTS `user`;
+CREATE TABLE `user` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) DEFAULT NULL,
+  `profile_id` int(11) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+
+-- ----------------------------
+-- Records of user
+-- ----------------------------
+BEGIN;
+INSERT INTO `user` VALUES (1, 'prince1', 1);
+INSERT INTO `user` VALUES (2, 'prince2', 2);
+INSERT INTO `user` VALUES (3, 'prince3', 3);
 COMMIT;
 
 -- ----------------------------
